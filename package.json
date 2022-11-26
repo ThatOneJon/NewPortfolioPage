@@ -13,9 +13,15 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@fontsource/roboto": "^4.5.8",
+    "@fontsource/roboto-mono": "^4.5.8",
+    "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^5.0.0",
+    "gatsby-plugin-styled-components": "^6.2.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
+    "styled-components": "^5.3.6"
   },
   "repository": {
     "type": "git",
