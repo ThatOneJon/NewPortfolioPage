@@ -7,15 +7,13 @@ import  Col  from "react-bootstrap/Col";
 import styled from "styled-components"
 import Socials from "../components/socials"
 import Footer from "../components/footer";
-import Projects from "../components/projects"
+//import Projects from "../components/projects"
 import "@fontsource/roboto-mono"
 import "@fontsource/nerko-one"
 
 
 
 export default function Home() {
-  const[scroll, setScroll] = React.useState(false)
-
 
   return (
     <Wrapper>
@@ -25,9 +23,9 @@ export default function Home() {
             <Socials />
           </Col>
         </Row>
-          <Row className="justify-content-center align-items-center"  style={{height: "90vh", marginTop:"-60px"}} >
+          <Row className="justify-content-center align-items-center "  style={{height: "95vh",  textShadow: "3px 3px black"}} >
               <Col  > 
-                  <h1 style={{textAlign:"center", marginBottom:"180px", fontSize:"calc(2em + 8vw)"}}>Welcome ...</h1>
+                  <h1 style={{textAlign:"center", marginBottom:"180px", marginTop:"100px", fontSize:"calc(2em + 7vw)"}}>Welcome ...</h1>
                   <h4 style={{textAlign:"center",  marginTop:"-130px", marginBottom:"80px", fontSize:"2em"}}>I’m <u>Jon</u>, a self taught web Dev. Feel free to take a look at some of my projects. </h4>
                   <Nav /> 
               </Col> 
