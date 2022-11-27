@@ -2,7 +2,7 @@ import React from "react"
 
 
 
-export default Projects() {
+export default function Projects() {
     return(
         <>test</>
     )

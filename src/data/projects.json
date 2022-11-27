@@ -1,0 +1,37 @@
+[   
+    {
+        "header":"Python Django / Javascript React / Bootstrap /Figma",
+        "subheader":"Currently under construction: A fitness tracking fullstack Web Application - Django Backend - React and Bootstrap Frontend",
+        "textbody":"The basic desktop and mobile design was done in Figma. The Backend was implemented in Django / Django Rest Framework, in form of a REST Api with authentication through jwt tokens and SQLite Database. The frontend mostly follows the figma design and is implemented in React + React-Bootstrap, it consumes the Django API through the exposed endpoints."
+    },
+    {
+        "header":"",
+        "subheader":"",
+        "textbody":""
+    },
+    {
+        "header":"",
+        "subheader":"",
+        "textbody":""
+    },
+    {
+        "header":"",
+        "subheader":"",
+        "textbody":""
+    },
+    {
+        "header":"",
+        "subheader":"",
+        "textbody":""
+    },
+    {
+        "header":"",
+        "subheader":"",
+        "textbody":""
+    },
+    {
+        "header":"",
+        "subheader":"",
+        "textbody":""
+    }
+]

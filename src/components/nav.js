@@ -19,7 +19,7 @@ export default function Nav(){
         <Container fluid >
           <Row lg={4} xs={1}  className="justify-content-center" >
             <Col className="text-center"  style={{paddingTop: "20px"}}>
-              <h1 onClick={() => setOpen(!open)} aria-expanded={open} aria-controls="example-collapse-text" > About <TbMessageDots/></h1>
+              <h1 onClick={() => setOpen(!open)} aria-expanded={open} aria-controls="example-collapse-text" style={open ? {textDecoration:"underline"} : null}> About <TbMessageDots/></h1>
             <Collapse in={open}>
               <div id="example-collapse-text" style={{marginTop:"30px"}}>
                   <h3>Name: <u>{data[0].name}</u></h3>
@@ -31,7 +31,7 @@ export default function Nav(){
               </Collapse>
               </Col>
           <Col className="text-center mx-4"  style={{paddingTop: "20px"}}>
-          <h1 onClick={() => setOpenStack(!openStack)} aria-expanded={openStack} aria-controls="example-collapse-text2" >Stack <TbMessageDots/> </h1>
+          <h1 onClick={() => setOpenStack(!openStack)} aria-expanded={openStack} aria-controls="example-collapse-text2" style={openStack ? {textDecoration:"underline"} : null} >Stack <TbMessageDots/> </h1>
             <Collapse in={openStack}>
               <div id="example-collapse-text2" style={{marginTop:"30px"}}>
                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
@@ -50,19 +50,22 @@ export default function Nav(){
 const Wrapper = styled.section`
   #example-collapse-text { 
     color: white;
-    font-size: 1.4em;
+    font-size: 1.3em;
     text-align: justify;
   }
 
   #example-collapse-text2{
     color: white;
-    font-size: 1.4em;
+    font-size: 1.3em;
     text-align: justify;
   }
 
   h1:hover{
     cursor: pointer;
     text-decoration: underline;
+  }
+  h1 {
+    font-size: 3.5em;
   }
 
 `
