@@ -15,7 +15,7 @@
         "textbody":"Mail Project: An E-mail client implementation with Javascript, through fetch, using the supplied API of a Django backend.Network: Twitter inspired social network, with register/login, post/edit/delete, profile, like functions.Sale Site: Ebay inspired Site"
     },
     {
-        "header":"This site: HTML, CSS, Bootstrap, JS",
+        "header":"First Portfolio Site: HTML, CSS, Bootstrap, JS",
         "subheader":"One page site - implementation ",
         "textbody":"This site is made up of a single index.html, which is mostly built with bootstrap and some custom html/css. Pagination is achieved through Javascript."
     },
