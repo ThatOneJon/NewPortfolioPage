@@ -38,7 +38,7 @@ export default function Home() {
               </Col>
             </Row>
 
-            <Row className="fixed-bottom text-center" >
+            <Row className="mb-0 text-center" >
               <Col lg>
                   <Footer />
               </Col>
