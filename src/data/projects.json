@@ -2,36 +2,43 @@
     {
         "header":"Python Django / Javascript React / Bootstrap /Figma",
         "subheader":"Currently under construction: A fitness tracking fullstack Web Application - Django Backend - React and Bootstrap Frontend",
-        "textbody":"The basic desktop and mobile design was done in Figma. The Backend was implemented in Django / Django Rest Framework, in form of a REST Api with authentication through jwt tokens and SQLite Database. The frontend mostly follows the figma design and is implemented in React + React-Bootstrap, it consumes the Django API through the exposed endpoints."
+        "textbody":"The basic desktop and mobile design was done in Figma. The Backend was implemented in Django / Django Rest Framework, in form of a REST Api with authentication through jwt tokens and SQLite Database. The frontend mostly follows the figma design and is implemented in React + React-Bootstrap, it consumes the Django API through the exposed endpoints.",
+        "link": "https://github.com/ThatOneJon/FiTra"
     },
     {
         "header":"Python / Django",
         "subheader":"Blog-Posting-Site",
-        "textbody":"Application with a minimal design, built with Python/Django, plain HTML, CSS and Javascript. It allows Users to register, login and Post articles to the index.html page. Index.html, it also automatically creates a user profile, which can be editted. A user may also edit and delete their own articles. A Rest_API is implemented, which gives access to the articles.There was no focus on visual design, but on the implemented functionalities."
+        "textbody":"Application with a minimal design, built with Python/Django, plain HTML, CSS and Javascript. It allows Users to register, login and Post articles to the index.html page. Index.html, it also automatically creates a user profile, which can be editted. A user may also edit and delete their own articles. A Rest_API is implemented, which gives access to the articles.There was no focus on visual design, but on the implemented functionalities.",
+        "link":"https://github.com/ThatOneJon/DjangoApplicationArticlePosting"
     },
     {
         "header":"Python / Django / Javascript ",
         "subheader":"Projects from the Web probgramming with Python and Javascript course",
-        "textbody":"Mail Project: An E-mail client implementation with Javascript, through fetch, using the supplied API of a Django backend.Network: Twitter inspired social network, with register/login, post/edit/delete, profile, like functions.Sale Site: Ebay inspired Site"
+        "textbody":"Mail Project: An E-mail client implementation with Javascript, through fetch, using the supplied API of a Django backend.Network: Twitter inspired social network, with register/login, post/edit/delete, profile, like functions.Sale Site: Ebay inspired Site",
+        "link":"https://github.com/ThatOneJon/CourseCS50Web"
     },
     {
         "header":"First Portfolio Site: HTML, CSS, Bootstrap, JS",
         "subheader":"One page site - implementation ",
-        "textbody":"This site is made up of a single index.html, which is mostly built with bootstrap and some custom html/css. Pagination is achieved through Javascript."
+        "textbody":"This site is made up of a single index.html, which is mostly built with bootstrap and some custom html/css. Pagination is achieved through Javascript.",
+        "link":"https://thatonejon.github.io/Pages_Site/"
     },
     {
         "header":"Contao - CMS",
         "subheader":"Extending company site - based on Contao",
-        "textbody":"New sites include Team and Impressionen.Some other optimizations have been done. Raw CSS and HTML were used inside the contao framework. Site!"
+        "textbody":"New sites include Team and Impressionen.Some other optimizations have been done. Raw CSS and HTML were used inside the contao framework. Site!",
+        "link":"https://terra-digital.de/projekte.html"
     },
     {
         "header":"React / Javascript",
         "subheader":"Yatzeeh Game and Travel blog component",
-        "textbody":"A Yatzeeh game, with the ability to roll 5 dice 3 times and to hold individual dice, in order to build full house, straights etc., which will be desplayed as dice icons and show the scoring for each. The project was done in HTML, Css and mostly React (JS/JSX). && A small travel blog component, with card child components, built in React."
+        "textbody":"A Yatzeeh game, with the ability to roll 5 dice 3 times and to hold individual dice, in order to build full house, straights etc., which will be desplayed as dice icons and show the scoring for each. The project was done in HTML, Css and mostly React (JS/JSX). && A small travel blog component, with card child components, built in React.",
+        "link":"https://github.com/ThatOneJon/React-Yatzeeh-Game"
     },
     {
         "header":"React / Chrome Extension",
         "subheader":"A currency converter Chrome extension, built using CSS HTML and React",
-        "textbody":"The extension makes an API call to get all available currencies and displays them as a Select/dropdown menu. After selecting the base currency and the currency to convert to, an amount can be specified and the extension will make another API call and display the amount with 3 decimal points."
+        "textbody":"The extension makes an API call to get all available currencies and displays them as a Select/dropdown menu. After selecting the base currency and the currency to convert to, an amount can be specified and the extension will make another API call and display the amount with 3 decimal points.",
+        "link":"https://github.com/ThatOneJon/React-ChromeExtension"
     }
 ]

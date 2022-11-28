@@ -13,6 +13,9 @@ import {FaHtml5} from "react-icons/Fa"
 import {GrReactjs} from "react-icons/Gr"
 import {IoLogoPython} from "react-icons/Io"
 import {BsGithub} from "react-icons/Bs"
+import {GrGatsbyjs} from "react-icons/Gr"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
+
 
 export default function Nav(){
     const [open, setOpen] = React.useState(true);
@@ -45,7 +48,9 @@ export default function Nav(){
                   <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white",background: "linear-gradient(90deg, rgba(0,0,0,1) 56%, rgba(255,255,255,1) 56%)", boxshadow:"2px 2px black"}}><SiJavascript /> Javascript</li>
                   <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white",background: "linear-gradient(90deg, rgba(0,0,0,1) 53%, rgba(255,255,255,1) 53%)"}}> <GrReactjs /> React</li>
                   <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white",background: "linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(255,255,255,1) 52%)"}}> <SiBootstrap /> Bootstrap</li>
-                  <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white",background: "linear-gradient(90deg, rgba(0,0,0,1) 32%, rgba(255,255,255,1) 32%)"}}> <SiTypescript/> Typescript</li>
+                  <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white",background: "linear-gradient(90deg, rgba(0,0,0,1) 23%, rgba(255,255,255,1) 23%)"}}> <SiTypescript/> Typescript</li>
+                  <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white",background: "linear-gradient(90deg, rgba(0,0,0,1) 38%, rgba(255,255,255,1) 38%)"}}> <GrGatsbyjs/> Gatsby</li>
+
                 </ul>
                 <h3>Backend</h3>
                 <ul>
@@ -61,7 +66,7 @@ export default function Nav(){
               </div>
             </Collapse>
             </Col>
-            <Col className="text-center"  as={Link} to="/" style={{paddingTop: "20px"}}><h1>Projects <TbMessageDots/> </h1></Col>
+            <Col className="text-center"  title="projects" style={{paddingTop: "20px"}}><AnchorLink to ="/#projects"><h1>Projects <TbMessageDots/> </h1></AnchorLink></Col>
           </Row>
           </Container>
       </Wrapper>

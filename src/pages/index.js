@@ -14,6 +14,7 @@ import Projects from "../components/projects";
 
 
 
+
 export default function Home() {
 
   return (
@@ -32,7 +33,7 @@ export default function Home() {
               </Col> 
             </Row>
             <Row className="projectsRow ">
-              <Col>
+              <Col id="projects">
                 <Projects />
               </Col>
             </Row>
