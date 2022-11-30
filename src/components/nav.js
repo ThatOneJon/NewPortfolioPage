@@ -1,6 +1,5 @@
 
 import React from "react"
-import { Link }from  "gatsby"
 import Collapse from 'react-bootstrap/Collapse';
 import styled from "styled-components"
 import Container from "react-bootstrap/Container";
@@ -66,7 +65,7 @@ export default function Nav(){
               </div>
             </Collapse>
             </Col>
-            <Col className="text-center"  title="projects" style={{paddingTop: "20px"}}><AnchorLink to ="/#projects"><h1>Projects <TbMessageDots/> </h1></AnchorLink></Col>
+            <Col className="text-center"  title="projects" style={{paddingTop: "20px"}}><AnchorLink to ="/#projects" ><h1>Projects <TbMessageDots/> </h1></AnchorLink></Col>
           </Row>
           </Container>
       </Wrapper>
