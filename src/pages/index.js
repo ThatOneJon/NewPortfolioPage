@@ -101,3 +101,12 @@ const Wrapper = styled.section`
   }
 
 `
+
+export function Head(){
+  return(
+    <>
+    <title>Portfolio</title>
+    <meta name="description " content="My Web dev portfolio page, showcasing some of my projects" />
+    </>
+  )
+}

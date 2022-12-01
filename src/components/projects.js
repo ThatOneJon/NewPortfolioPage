@@ -5,14 +5,20 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import projects from "../data/projects.json"
 import styled from "styled-components"
+import {StaticImage} from "gatsby-plugin-image"
+import Carousel from 'react-bootstrap/Carousel';
+
 
 
 export default function Projects() {
     let cards = projects.map((project) => {return (
-        <Col>
+        <Col key={projects.indexOf(project)}>
             <Card border="primary" bg="light" className="allCards p-3 m-3">
                 <Card.Header>{project.header}</Card.Header>
+
                 <Card.Img variant ="top" src="https://picsum.photos/1000" />
+
+
                 <Card.Body>
                 <Card.Title>{project.subheader}</Card.Title>
                 <Card.Text>{project.textbody}</Card.Text>
