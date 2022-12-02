@@ -5,8 +5,15 @@
  */
 
 /**
- * @type {import('gatsby').GatsbyConfig}
- */
+
+  *@type {import('gatsby').GatsbyConfig} 
+  */
+ 
+
+  require("dotenv").config({
+    path: `.env.${process.env.NODE_ENV}`,
+  })
+
 module.exports = {
 
   siteMetadata:{
@@ -27,6 +34,16 @@ module.exports = {
   `gatsby-plugin-react-helmet`, 
   `gatsby-plugin-image`,
   `gatsby-plugin-sharp`,
-  `gatsby-transformer-sharp`, 
+  `gatsby-transformer-sharp`,
+  
+  {
+    resolve: `gatsby-source-contentful`,
+    options: {
+      spaceId: `ti2sjnhp7sg2`,
+      // Learn about environment variables: https://gatsby.dev/env-vars
+      accessToken: process.env.CONTENTFUL_API_KEY,
+    },
+  },
+
 ],
 }
