@@ -54,7 +54,7 @@ export default function Home() {
               </Col>
             </Row>
 
-              <Fade in ={bottom} timeout={600}>
+              <Fade in ={bottom} timeout={800}>
                   <div>
                     <Row className="text-center justify-content-center mb-5" >
                         <Col> <h3>Currently looking for employment!</h3> </Col>
