@@ -4,7 +4,6 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Button from "react-bootstrap/Button"
-import projects from "../data/projects.json"
 import styled from "styled-components"
 import {GatsbyImage} from "gatsby-plugin-image"
 import Carousel from 'react-bootstrap/Carousel'
@@ -35,10 +34,10 @@ query {
 export default function Projects() {
     const contentfulData = useStaticQuery(query);
     const projectsContentful = contentfulData.allContentfulProjects.nodes
-
     let cards2 = projectsContentful.map(project => {
+        
         return(
-<Col key={projects.indexOf(project)+2}>
+<Col key={projectsContentful.indexOf(project)+2}>
             <Card border="primary" bg="light" className="allCards p-3 m-3">
                 <Card.Header className="d-flex flex-row flex-wrap">
                     {

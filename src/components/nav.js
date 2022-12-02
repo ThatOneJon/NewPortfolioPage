@@ -61,6 +61,7 @@ export default function Nav(){
                 <h3>ETC</h3>
                 <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white"}}> <BsGithub/> Git / GitHub</li>
                 <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white"}}>  Figma</li>
+                <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white"}}>  Some GraphQL</li>
                 </ul>
               </div>
             </Collapse>
