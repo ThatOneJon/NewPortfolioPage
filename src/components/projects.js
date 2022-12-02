@@ -70,27 +70,10 @@ export default function Projects() {
         </Col>
         )
     })
-    /*
-    let cards = projects.map((project) => {return (
-        <Col key={projects.indexOf(project)}>
-            <Card border="primary" bg="light" className="allCards p-3 m-3">
-                <Card.Header>{project.header}</Card.Header>
-
-                <Card.Img variant ="top" src="https://picsum.photos/1000" />
-
-                <Card.Body>
-                <Card.Title>{project.subheader}</Card.Title>
-                <Card.Text>{project.textbody}</Card.Text>
-                </Card.Body>
-                <Card.Footer>Code: <a  href={project.link}>Click here!</a></Card.Footer>
-            </Card>
-        </Col>
-    )})
-    */
     return(
         <Wrapper>
             <Container fluid >
-                <h1>... Projects</h1>
+                <h1 style={{marginBottom:"12vh"}}>... Projects</h1>
                 <Row lg={3} className="justify-content-center ">
                     {cards2.slice(0, 3)}
                 </Row>

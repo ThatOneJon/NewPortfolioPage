@@ -2,7 +2,7 @@
     {
         "name":"Jon",
         "based":"Mainz",
-        "about":"During my studies at university i took a course in Web Developing (php mostly) and fell in love with it. Since my actual degree is in another field, I had to learn pretty much everything by myself. The ressources i used the most include Harvard's CS50-Programming with Python and CS50-Webprogramming with Python and Javascript on edX (exercises and projects for that course can be found on my GitHub acc). I also use f.ex. FreeCodeCamp and a whole lot of other sites, including the official documentations for django, bootstrap, react ...etc... I am always trying to improve and extend my skillset.",
+        "about":"During my studies at university I took a course in Web Developing (building an E commerce site mostly in php) and instantly fell in love with it. Since my actual degree is in another field, I had to learn pretty much everything by myself. The ressources I used the most include Harvard's CS50-Programming with Python and CS50-Webprogramming with Python and Javascript, on edX (exercises and projects from that course can be found on my GitHub acc). I also use f.ex. FreeCodeCamp and a whole lot of other sites, including the official documentations for django, bootstrap, react ...etc... I am always trying to improve and extend my skillset.",
         "languages":"German, English",
         "degree":"B.a. philosophy and Economics"
     }

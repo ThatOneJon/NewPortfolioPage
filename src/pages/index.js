@@ -93,7 +93,7 @@ const Wrapper = styled.section`
   }
   .projectsRow{
     margin-top: 60vh;
-    margin-bottom: 10vh;
+    margin-bottom: 20vh;
   }
 
   .footerRow{
