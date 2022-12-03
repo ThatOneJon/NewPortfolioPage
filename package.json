@@ -16,7 +16,6 @@
     "@fontsource/nerko-one": "^4.5.8",
     "@fontsource/roboto": "^4.5.8",
     "@fontsource/roboto-mono": "^4.5.8",
-    "@react-icons/all-files": "^4.1.0",
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^5.0.0",
     "gatsby-plugin-anchor-links": "^1.2.1",

@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import data from "../data/data.json"
-import {TbMessageDots} from "react-icons/Tb"
+import {TbMessageDots} from "react-icons/Tb";
 import {SiJavascript, SiCss3, SiBootstrap, SiTypescript, SiDjango, SiMysql} from "react-icons/Si"
 import {FaHtml5} from "react-icons/Fa"
 import {GrReactjs} from "react-icons/Gr"

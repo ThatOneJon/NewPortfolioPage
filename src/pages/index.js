@@ -12,7 +12,7 @@ import Footer from "../components/footer";
 import "@fontsource/roboto-mono"
 import "@fontsource/nerko-one"
 import Projects from "../components/projects";
-import { BsFillArrowUpCircleFill }from "react-icons/Bs"
+import { BsFillArrowUpCircleFill }from "react-icons/Bs";
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import Fade from 'react-bootstrap/Fade';
 
