@@ -34,6 +34,7 @@ query {
 export default function Projects() {
     const contentfulData = useStaticQuery(query);
     const projectsContentful = contentfulData.allContentfulProjects.nodes
+    console.log(contentfulData)
     let cards2 = projectsContentful.map(project => {
         
         return(
@@ -41,7 +42,7 @@ export default function Projects() {
             <Card border="primary" bg="light" className="allCards p-3 m-3">
                 <Card.Header className="d-flex flex-row flex-wrap">
                     {
-                        project.languages.map(lang => <h3 style={{marginRight:"10px"}}><Badge key={lang}>{lang}</Badge></h3>
+                        project.languages.map(lang => (<h3 style={{marginRight:"10px"}}><Badge key={lang}>{lang}</Badge></h3>)
                         )
                     }
                 </Card.Header>
@@ -73,6 +74,9 @@ export default function Projects() {
         <Wrapper>
             <Container fluid >
                 <h1 style={{marginBottom:"12vh"}}>... Projects</h1>
+                <Row lg={2} className="justify-content-center ">
+                    {cards2[9]}
+                </Row>
                 <Row lg={3} className="justify-content-center ">
                     {cards2.slice(0, 3)}
                 </Row>
