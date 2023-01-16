@@ -14,6 +14,7 @@ import {IoLogoPython} from "react-icons/Io"
 import {BsGithub} from "react-icons/Bs"
 import {GrGatsbyjs} from "react-icons/Gr"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
+import{SiTailwindcss} from "react-icons/Si"
 
 
 export default function Nav(){
@@ -49,6 +50,7 @@ export default function Nav(){
                   <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white",background: "linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(255,255,255,1) 52%)"}}> <SiBootstrap /> Bootstrap</li>
                   <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white",background: "linear-gradient(90deg, rgba(0,0,0,1) 23%, rgba(255,255,255,1) 23%)"}}> <SiTypescript/> Typescript</li>
                   <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white",background: "linear-gradient(90deg, rgba(0,0,0,1) 38%, rgba(255,255,255,1) 38%)"}}> <GrGatsbyjs/> Gatsby</li>
+                  <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white",background: "linear-gradient(90deg, rgba(0,0,0,1) 38%, rgba(255,255,255,1) 38%)"}}> <SiTailwindcss/> Tailwind</li>
 
                 </ul>
                 <h3>Backend</h3>
@@ -62,6 +64,8 @@ export default function Nav(){
                 <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white"}}> <BsGithub/> Git / GitHub</li>
                 <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white"}}>  Figma</li>
                 <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white"}}>  Some GraphQL</li>
+                <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white"}}>  Currently learning (among other goals): Next.js, NodeJs</li>
+
                 </ul>
               </div>
             </Collapse>
