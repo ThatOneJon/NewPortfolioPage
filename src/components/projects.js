@@ -70,12 +70,14 @@ export default function Projects() {
         </Col>
         )
     })
+    console.log(cards2)
     return(
         <Wrapper>
             <Container fluid >
                 <h1 style={{marginBottom:"12vh"}}>... Projects</h1>
                 <Row lg={2} className="justify-content-center ">
                     {cards2[9]}
+                    {cards2[10]}
                 </Row>
                 <Row lg={3} className="justify-content-center ">
                     {cards2.slice(0, 3)}
