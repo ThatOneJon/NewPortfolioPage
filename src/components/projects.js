@@ -76,8 +76,8 @@ export default function Projects() {
             <Container fluid >
                 <h1 style={{marginBottom:"12vh"}}>... Projects</h1>
                 <Row lg={2} className="justify-content-center ">
-                    {cards2[9]}
-                    {cards2[10]}
+                    {<a href="https://jocular-elf-bda8f3.netlify.app/">{cards2[9]}</a>}
+                    {<a href="https://learning-thatonejon.vercel.app/">{cards2[10]}</a>}
                 </Row>
                 <Row lg={3} className="justify-content-center ">
                     {cards2.slice(0, 3)}

@@ -8,14 +8,14 @@ import Col from "react-bootstrap/Col";
 import data from "../data/data.json"
 import {TbMessageDots} from "react-icons/Tb";
 import {SiJavascript, SiCss3, SiBootstrap, SiTypescript, SiDjango, SiMysql} from "react-icons/Si"
-import {FaHtml5} from "react-icons/Fa"
+import {FaHtml5, FaSass, FaNodeJs} from "react-icons/Fa"
 import {GrReactjs} from "react-icons/Gr"
 import {IoLogoPython} from "react-icons/Io"
 import {BsGithub} from "react-icons/Bs"
 import {GrGatsbyjs} from "react-icons/Gr"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import{SiTailwindcss} from "react-icons/Si"
-
+import{TbBrandNextjs}from "react-icons/Tb"
 
 export default function Nav(){
     const [open, setOpen] = React.useState(true);
@@ -50,13 +50,15 @@ export default function Nav(){
                   <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white",background: "linear-gradient(90deg, rgba(0,0,0,1) 52%, rgba(255,255,255,1) 52%)"}}> <SiBootstrap /> Bootstrap</li>
                   <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white",background: "linear-gradient(90deg, rgba(0,0,0,1) 23%, rgba(255,255,255,1) 23%)"}}> <SiTypescript/> Typescript</li>
                   <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white",background: "linear-gradient(90deg, rgba(0,0,0,1) 38%, rgba(255,255,255,1) 38%)"}}> <GrGatsbyjs/> Gatsby</li>
+                  <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white",background: "linear-gradient(90deg, rgba(0,0,0,1) 38%, rgba(255,255,255,1) 38%)"}}> <TbBrandNextjs/> NextJs</li>
                   <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white",background: "linear-gradient(90deg, rgba(0,0,0,1) 38%, rgba(255,255,255,1) 38%)"}}> <SiTailwindcss/> Tailwind</li>
-
+                  <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white",background: "linear-gradient(90deg, rgba(0,0,0,1) 38%, rgba(255,255,255,1) 38%)"}}> <FaSass/> Sass</li>
                 </ul>
                 <h3>Backend</h3>
                 <ul>
                 <li style={{padding:"5px", textAlign:"start", border:"4px solid white", background:"linear-gradient(90deg, rgba(0,0,0,1) 69%, rgba(255,255,255,1) 69%)"}}><IoLogoPython /> Python</li>
                 <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white", background:"linear-gradient(90deg, rgba(0,0,0,1) 63%, rgba(255,255,255,1) 63%)"}}> <SiDjango/> Django</li>
+                <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white", background:"linear-gradient(90deg, rgba(0,0,0,1) 24%, rgba(255,255,255,1) 24%)"}}> <FaNodeJs/> NodeJS</li>
                 <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white", background:"linear-gradient(90deg, rgba(0,0,0,1) 24%, rgba(255,255,255,1) 24%)"}}> <SiMysql/> MySQL</li>
                 </ul>
                 <ul>
@@ -64,6 +66,7 @@ export default function Nav(){
                 <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white"}}> <BsGithub/> Git / GitHub</li>
                 <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white"}}>  Figma</li>
                 <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white"}}>  Some GraphQL</li>
+                <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white"}}>  REST</li>
                 <li style={{marginTop:"5px", padding:"5px",textAlign:"start", border:"2px solid white"}}>  Currently learning (among other goals): Next.js, NodeJs</li>
 
                 </ul>
