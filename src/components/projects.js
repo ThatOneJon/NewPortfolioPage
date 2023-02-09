@@ -75,15 +75,19 @@ export default function Projects() {
         <Wrapper>
             <Container fluid >
                 <h1 style={{marginBottom:"12vh"}}>... Projects</h1>
-                <Row lg={2} className="justify-content-center ">
-                    {<a href="https://jocular-elf-bda8f3.netlify.app/">{cards2[9]}</a>}
-                    {<a href="https://learning-thatonejon.vercel.app/">{cards2[10]}</a>}
+                <Row lg={3} className="justify-content-center ">
+                    {cards2[3]}
                 </Row>
                 <Row lg={3} className="justify-content-center ">
                     {cards2.slice(0, 3)}
                 </Row>
                 <Row lg={3} className="justify-content-center ">
-                    {cards2.slice(3, 5)}
+                    {cards2.slice(4, 5)}
+                    {cards2[9]}
+                </Row>
+                <Row lg={3} className="justify-content-center ">
+                    {cards2[10]}
+                    {cards2[11]}
                 </Row>
                 <Row lg={3} className="justify-content-center">
                     {cards2.slice(5, 9)}
