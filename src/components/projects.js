@@ -21,6 +21,7 @@ query {
       }
       languages
       links
+      type
       pictures {
         gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
         title
@@ -34,11 +35,10 @@ query {
 export default function Projects() {
     const contentfulData = useStaticQuery(query);
     const projectsContentful = contentfulData.allContentfulProjects.nodes
-    console.log(contentfulData)
-    let cards2 = projectsContentful.map(project => {
-        
+    let cards2 = projectsContentful.map(project =>{
+        let type = project.type
         return(
-<Col key={projectsContentful.indexOf(project)+2}>
+        <Col key={projectsContentful.indexOf(project)+2} name={project.type}>
             <Card border="primary" bg="light" className="allCards p-3 m-3">
                 <Card.Header className="d-flex flex-row flex-wrap">
                     {
@@ -70,27 +70,67 @@ export default function Projects() {
         </Col>
         )
     })
-    console.log(cards2)
+    // SORTING ----------------------------
+    let cardsETC = []
+    let cardsFR = []
+    let cardsFull=[]
+    cards2.map(card => {if(card.props.name[0] === "ETC"){
+        cardsETC.push(card)
+        }else if(card.props.name[0] === "Frontend"){
+            cardsFR.push(card)
+        }else{
+            cardsFull.push(card)
+        }
+    })
+    console.log(cardsETC)
+    console.log(cardsFull)
+    console.log(cardsFR)
+
     return(
         <Wrapper>
             <Container fluid >
-                <h1 style={{marginBottom:"12vh"}}>... Projects</h1>
-                <Row lg={3} className="justify-content-center ">
-                    {cards2[3]}
+                <h1 style={{marginBottom:"10vh"}}>... Projects</h1>
+
+                <Row style={{marginBottom:"7vh"}}>
+                    <div style={{backgroundColor:"white", width:"100%", height:"3px"}}></div>
+                    <h2 style={{fontSize: "2.3em",textAlign:"center"}}>Fullstack</h2>
+                    <div style={{backgroundColor:"white", width:"100%", height:"3px"}}></div>
                 </Row>
+
+                <Row lg={3} className="justify-content-center ">
+                    {cards2[11]}
+                    {cards2[7]}
+                </Row>
+
+                <Row style={{marginBottom:"7vh", marginTop:"7vh"}}>
+                    <div style={{backgroundColor:"white", width:"100%", height:"3px"}}></div>
+                    <h2 style={{fontSize: "2.3em",textAlign:"center"}}>Frontend</h2>
+                    <div style={{backgroundColor:"white", width:"100%", height:"3px"}}></div>
+                </Row>
+
                 <Row lg={3} className="justify-content-center ">
                     {cards2.slice(0, 3)}
                 </Row>
+
+                <Row style={{marginBottom:"7vh", marginTop:"7vh"}}>
+                    <div style={{backgroundColor:"white", width:"100%", height:"3px"}}></div>
+                    <h2 style={{fontSize: "2.3em",textAlign:"center"}}>Backend / In-between / Etc...</h2>
+                    <div style={{backgroundColor:"white", width:"100%", height:"3px"}}></div>
+                </Row>
+
                 <Row lg={3} className="justify-content-center ">
-                    {cards2.slice(4, 5)}
+                    {cards2[4]}
+                    {cards2[5]}
                     {cards2[9]}
                 </Row>
                 <Row lg={3} className="justify-content-center ">
                     {cards2[10]}
-                    {cards2[11]}
+                    {cards2[3]}
+                    {cards2[6]}
+
                 </Row>
                 <Row lg={3} className="justify-content-center">
-                    {cards2.slice(5, 9)}
+                    {cards2[8]}
                 </Row>
             </Container>
         </Wrapper>

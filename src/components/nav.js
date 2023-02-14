@@ -33,6 +33,7 @@ export default function Nav(){
                   <h4>From: Germany -<u>{data[0].based}</u></h4>
                   <h4>Languages: <u>{data[0].languages}</u></h4>
                   <h4>Degree: <u>{data[0].degree}</u></h4>
+                  <br></br>
                   {data[0].about}
               </div>
               </Collapse>
