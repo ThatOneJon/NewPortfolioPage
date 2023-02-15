@@ -9,7 +9,7 @@ import {GatsbyImage} from "gatsby-plugin-image"
 import Carousel from 'react-bootstrap/Carousel'
 import {graphql, useStaticQuery} from "gatsby"
 import Badge from 'react-bootstrap/Badge';
-
+import {FaDotCircle} from "react-icons/fa"
 
 const  query = graphql`
 query {
@@ -22,6 +22,10 @@ query {
       languages
       links
       type
+      isLive {
+        link
+        live
+      }
       pictures {
         gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
         title
@@ -42,10 +46,11 @@ export default function Projects() {
             <Card border="primary" bg="light" className="allCards p-3 m-3">
                 <Card.Header className="d-flex flex-row flex-wrap">
                     {
-                        project.languages.map(lang => (<h3 style={{marginRight:"10px"}}><Badge key={lang}>{lang}</Badge></h3>)
+                        project.languages.map(lang => (<h3 style={{marginRight:"10px"} }><Badge key={lang}>{lang}</Badge></h3>)
                         )
                     }
                 </Card.Header>
+                {project.isLive.live === "true" ? <a className="live link-danger" style={{ marginTop:"10px", height:"2vh" }} href={`${project.isLive.link}`}><h4 style={{fontWeight:"bold"}}>Live <FaDotCircle/></h4></a> : <></>}
                 <Carousel className="mt-3">
                 {
                     project.pictures.map(pic => { return( 
@@ -70,6 +75,7 @@ export default function Projects() {
         </Col>
         )
     })
+    console.log(contentfulData)
     // SORTING ----------------------------
     let cardsETC = []
     let cardsFR = []
@@ -155,4 +161,5 @@ const Wrapper = styled.section`
     }
     .Gimage{
     }
+
 `
