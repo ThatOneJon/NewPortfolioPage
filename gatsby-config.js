@@ -36,6 +36,7 @@ module.exports = {
   `gatsby-plugin-sharp`,
   `gatsby-transformer-sharp`,
   `gatsby-plugin-netlify`,
+  `gatsby-transformer-remark`,
   
   {
     resolve: `gatsby-source-contentful`,

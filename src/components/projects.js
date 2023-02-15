@@ -10,6 +10,7 @@ import Carousel from 'react-bootstrap/Carousel'
 import {graphql, useStaticQuery} from "gatsby"
 import Badge from 'react-bootstrap/Badge';
 import {FaDotCircle} from "react-icons/fa"
+import ReactMarkdown from "react-markdown"
 
 const  query = graphql`
 query {
@@ -62,7 +63,7 @@ export default function Projects() {
                 </Carousel>
                 <Card.Body className="mt-2">
                 <Card.Title className="mb-3" style={{textDecoration:"underline", fontWeight:"bold"}}>{project.title}</Card.Title>
-                <Card.Text>{project.description.description}</Card.Text>
+                <Card.Text><ReactMarkdown>{project.description.description}</ReactMarkdown></Card.Text>
                 </Card.Body>
                 <Card.Footer style={{minHeight:"40px"}} className="d-flex justify-content-center">
                     {project.links && project.links.map(link => {
@@ -104,8 +105,7 @@ export default function Projects() {
                 </Row>
 
                 <Row lg={3} className="justify-content-center ">
-                    {cards2[11]}
-                    {cards2[7]}
+                    {cardsFull.map(card => card)}
                 </Row>
 
                 <Row style={{marginBottom:"7vh", marginTop:"7vh"}}>
@@ -115,7 +115,7 @@ export default function Projects() {
                 </Row>
 
                 <Row lg={3} className="justify-content-center ">
-                    {cards2.slice(0, 3)}
+                    {cardsFR.map(card => card)}
                 </Row>
 
                 <Row style={{marginBottom:"7vh", marginTop:"7vh"}}>
@@ -125,18 +125,7 @@ export default function Projects() {
                 </Row>
 
                 <Row lg={3} className="justify-content-center ">
-                    {cards2[4]}
-                    {cards2[5]}
-                    {cards2[9]}
-                </Row>
-                <Row lg={3} className="justify-content-center ">
-                    {cards2[10]}
-                    {cards2[3]}
-                    {cards2[6]}
-
-                </Row>
-                <Row lg={3} className="justify-content-center">
-                    {cards2[8]}
+                    {cardsETC.map(card => card)}
                 </Row>
             </Container>
         </Wrapper>
